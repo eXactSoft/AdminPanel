@@ -1,0 +1,288 @@
+/* Start Global Rules*/
+ul, ol{
+	list-style: none
+}
+
+*{
+	box-sizing:border-box
+}
+
+img{
+	max-width:100% !important;
+}
+
+a{
+	text-decoration:none;
+}
+
+em{
+	font-style:italic;
+}
+
+body {
+	line-height: 1;
+	-webkit-text-size-adjust: 100%;
+}
+/* End Global Rules*/
+
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, Tahoma;
+	height:800px;
+}
+
+/* Start Header */
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 999999;	
+	width:100%;
+	padding:20px;
+	background-color:#fff;
+	border-bottom:1px solid #cdcdcd;
+}
+/* End  Header*/
+
+/* Start Sidebar */
+.sidebar{
+	position:fixed;
+	top:58px;
+	left:0;
+	min-width:60px;
+	padding:15px;
+	background-color:#333;
+	color:#fff;
+	/*the following 2 steps to let the sidebar to be from top to bottom of the display*/
+	height:100%;
+	bottom:0;
+	border-bottom:1px solid #cdcdcd;
+}
+/* End Sidebar */
+
+/* Start Content */
+.content{
+	height:600px;
+	margin-left:100px;
+	margin-top:75px;
+	margin-right:10px;
+	border-bottom:1px solid #cdcdcd;
+}
+
+.content .row{
+	margin-top:30px;
+}
+/* Start Stats Box */
+.content .stat-box{
+	float:left;
+	width:29%;
+	margin-right:3.25%;
+	padding:35px;
+	color:#fff;
+	font-family: 'Carrois Gothic', sans-serif;
+	position:relative;
+}
+
+.content .stat-box:first-child{
+	background-color:#68ae00;
+	margin-left:3.25%;
+}
+
+.content .stat-box:first-child i{
+	color:#68ae00;
+}
+
+.content .stat-box:nth-child(2){
+	background-color: #FC8213;
+}
+
+.content .stat-box:nth-child(2) i{
+	color: #FC8213;
+}
+
+.content .stat-box:last-of-type{
+	background-color: #337AB7;
+}
+
+.content .stat-box:last-of-type i{
+	color: #337AB7;
+}
+
+.content .stat-box:hover{
+	background-color:#333;
+}
+
+.content .stat-box span{
+	display:block;
+}
+
+.content .stat-box span:first-child{
+	font-size:50px;
+}
+
+.content .stat-box span:last-of-type{
+	font-size:22px;
+}
+
+.content .stat-box p{
+	margin:8px 0;
+}
+
+.content .stat-box i{
+	position: absolute;
+	top:35px;
+	right:40px;
+	width:90px;
+	height:90px;
+	background-color:#fff;
+	color:black;
+	text-align:center;
+	line-height:90px;
+	border-radius:50%;
+}
+/* End Stats Box */
+/* Start Follow Box */
+.content .follow-box{
+	float:left;
+	width:45.12%;
+	margin-right:3.25%;
+	background-color:#fff;
+	color: #333;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.15);
+	position:relative;
+}
+
+.content .follow-box:first-child{
+	margin-left:3.25%;
+}
+
+.content .follow-box .box-title{
+	margin:0;
+	padding:20px;
+	font-weight:bold;
+	font-size:18px;
+	color:#fff;
+}
+
+.content .follow-box .box-green{
+	background-color:#080;
+}
+
+.content .follow-box .box-red{
+	background-color:#f44336;
+}
+
+.content .follow-box .box-sky{
+	background-color:#00bcd4;
+}
+
+.content .follow-box .box-yellow{
+	background-color:#ffca28;
+}
+
+.content .follow-box .box-content{
+	padding:20px;
+}
+
+.content .follow-box table{
+	width:100%;
+	text-align:left;	
+	border-spacing:0;
+}
+
+.content .follow-box table thead th{
+	font-weight:bold;
+	padding:10px;	
+	border-bottom:2px solid #ddd;
+}
+
+.content .follow-box table td{
+	padding:10px;
+	border-bottom:1px solid #ddd;
+}
+
+.content .follow-box table tbody tr:last-child td{
+	border-bottom:none;
+}
+
+.content .follow-box table .status{
+	padding:3px 6px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+.content .follow-box table .completed{
+	background-color:#5cb85c;
+}
+
+.content .follow-box table .in-progress-red{
+	background-color:#d9534f;
+}
+
+.content .follow-box table .in-progress-yellow{
+	background-color:#f0ad4e;
+}
+
+.content .follow-box table .in-progress-blue{
+	background-color:#5bc0de;
+}
+.content .follow-box table .perc-label{
+	padding:3px 6px;
+	border-radius:4px;
+	color:#fff;
+	font-size:14px;	
+	background-color:#777;
+}
+/*Start Private Messages Block*/
+.private-messages .box-content{
+	padding:0 !important;
+	height:300px;
+	overflow:auto;
+}
+.private-messages .pm-row{
+	overflow:hidden;
+	padding:20px;
+	border-bottom:1px solid #ccc;
+}
+
+.private-messages .pm-row img{
+	float:left;
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	margin-right:20px;	
+}
+
+.private-messages .pm-row .pm-name{
+	float:left;
+	width:calc(100% - 150px);
+}
+
+.private-messages .pm-row .pm-name h4{
+	margin:0 0 4px;
+	color:#00bcd4;
+}
+
+.private-messages .pm-row .pm-name p{
+	color:#999;
+}
+
+.private-messages .pm-row .pm-time{
+	color:#999;	
+	display:inline-block;
+	text-align:center;
+	width:80px;
+	position:relative;
+	top:15px;
+}
+/*End Private Messages Block*/
+
+/* End Follow Box */
+/* End Content */
+/* Start My Framework */
+.clearfix{ /* To fix the problems of the float property */
+	clear:both
+}
+/* End My Framework */
